@@ -1,0 +1,266 @@
+body
+{
+	background:url("../Images/back.jpg") no-repeat;
+	background-size:cover;/*to make image responsive*/
+	background-position: center center;
+	background-attachment: fixed;/* to make image scrollable*/
+	font-family: 'Lora', serif;
+	font-size :16px;
+}
+#header-nav
+{
+	background: black;
+	border-radius:0;
+	border:0;
+}
+#logo-img
+{
+	background:url("../Images/n1.png") no-repeat;
+	width:110px;
+	height: 198px;
+	margin:10px 100px 10px 0px ;
+}
+.navbar-brand h1
+{
+	font-family: 'Lora', serif;
+	color:red;
+	font-size:2.5em;
+	text-transform: uppercase;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom:0;
+	line-height: .75;
+}
+.navbar-brand a:hover,.navbar-brand a:focus
+{
+   text-decoration:none;
+   box-shadow:0 1px 5px white;
+}
+.navbar-brand p
+{
+	color:white;
+	text-transform: uppercase;
+	font-size:1.5em;
+	margin-top:15px;
+}
+#nav-list
+{
+	margin-top:10px;
+}
+#nav-list a
+{ 
+	color:white;
+	text-align: center;
+}
+#nav-list a:hover
+{
+	background:white;
+	color:black;
+}
+#nav-list a span
+{
+	font-size: 1em;
+}
+.navbar-header button .navbar-toggle, .navbar-header .icon-bar
+{
+	border: 1px solid red;
+}
+.navbar-header button.navbar-toggle
+{
+	clear:both;
+	margin-top:-30px;
+}
+#m-tile h2 ,#s-tile h2 ,#d-tile h2
+{
+	font-family: 'Lora', serif;
+	font-size:1.4em;
+	text-align:center;
+	margin-bottom: 35px;
+	color:red;
+	text-transform: uppercase;
+	font-weight:700;
+
+}
+#s-tile
+{
+	height:90%;
+	width:31%;
+	margin-bottom:15px;
+	margin-right:10px;
+	margin-left:10px;
+	border:2px solid black;
+	background-color: white;
+	opacity: .7;
+	font-weight:700;
+	background-color: black;
+    color:white;
+}
+#m-tile
+{
+	height:90%;
+	width:31%;
+	margin-bottom:15px;
+	margin-right:10px;
+	margin-left:10px;
+	border:2px solid black;
+	background-color: black;
+	opacity: .7;
+	font-weight:700;
+	color:white; 
+}
+#d-tile
+{
+	height:90%;
+	width:31%;
+	margin-bottom:15px;
+	margin-right:10px;
+	margin-left:10px;
+	border:2px solid black;
+	background-color: black;
+	opacity: .7;
+	font-weight:700;
+	color:white;
+
+}
+#s-tile a ,#m-tile a,#d-tile a
+{
+	color:red;
+	font-size:1.2em;
+}
+#s-tile >a:hover,#m-tile>a:hover,#d-tile>a:hover
+{
+	text-decoration: none;
+}
+#H
+{
+	font-weight: 700;
+	color:white;
+	text-align: center;
+	font-size: 5em;
+	margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+#m-tile:hover, #s-tile:hover, #d-tile:hover
+{
+	box-shadow:0 1px 5px 1px #cccccc;
+}
+@media (min-width: 1200px)
+{
+
+}
+@media (min-width:992px) and (max-width: 1199px)
+{
+    #s-tile, #d-tile
+    {
+	   height:100%;
+	   width:45%;
+	   margin: 0 15px 15px 15px;
+	   border:2px solid black;
+	   background-color:black;
+	   opacity: .7;
+	   font-weight:700;
+	   color:white; 
+    }
+    #m-tile
+    {
+       height:100%;
+	   width:94%;
+	    margin: 0 15px 15px 15px;
+	   border:2px solid black;
+	   background-color:black;
+	   opacity: .7;
+	   font-weight:700;
+	   color:white;
+	   float:left;
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    #s-tile, #d-tile
+    {
+	   height:100%;
+	   width:45%;
+	    margin: 0 15px 15px 15px;
+	   border:2px solid black;
+	   opacity: .7;
+	   font-weight:700;
+	   background-color: black;
+       color:white;
+       padding-left:15px;
+
+    }
+    #m-tile
+    {
+    	height:100%;
+	   width:94%;
+	    margin: 0 15px 15px 15px;
+	   border:2px solid black;
+	   background-color:black;
+	   opacity: .7;
+	   font-weight:700;
+	   color:white;
+	   padding-right: 15px;
+    }
+    .navbar-brand
+     {
+     	padding-top:10px;
+     	height:100px;
+     }
+     .navbar-brand h1
+     {
+         /*restaurant name*/
+         padding-top:10px;
+         font-size:5vw;/* 1vw=1% of viewport width*/
+     }
+     .navbar-brand p
+     {
+     	font-size:1em;
+     	margin-top:12px;
+     }
+
+}
+@media (max-width: 767px)
+{
+     /*header*/
+     .navbar-brand
+     {
+     	padding-top:10px;
+     	height:80px;
+     }
+     .navbar-brand h1
+     {
+         /*restaurant name*/
+         padding-top:10px;
+         font-size:5vw;/* 1vw=1% of viewport width*/
+     }
+     .navbar-brand p
+     {
+     	font-size:.6em;
+     	margin-top:12px;
+     }
+     #collapsable-nav a
+     {
+     	/*collapsed nav menu glyph*/
+     	font-size:1.2em;
+     }
+     #collapsable-nav a span
+     {
+     	/*overwriting size of glyph*/
+     	font-size:1em;
+     	margin-right:5px;
+     }
+    #m-tile, #s-tile, #d-tile
+    {
+	   height:100%;
+	   width:94%;
+	   margin: 0 15px 15px 15px;
+	   border:2px solid black;
+	   background-color: black;
+	   opacity: .7;
+	   font-weight:700;
+	   color: white; 
+    }
+}
